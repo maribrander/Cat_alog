@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.listingapp"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.listingapp"
@@ -15,6 +15,11 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        buildFeatures { 
+            viewBinding = true
+        }
+
     }
 
     buildTypes {
