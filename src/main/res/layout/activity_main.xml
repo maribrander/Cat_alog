@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tv_app_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center"
+        android:text="Ain Minhaix Compraix"
+        android:textSize="54sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_myLists"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginStart="32sp"
+        android:layout_marginEnd="32sp"
+        android:text="Minhas Listas"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_app_title"
+        tools:layout_editor_absoluteX="14dp" />
+
+    <Button
+        android:id="@+id/btn_newList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="32sp"
+        android:layout_marginEnd="32sp"
+        android:text="Nova Lista"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/btn_myLists"
+        app:layout_constraintTop_toBottomOf="@+id/btn_myLists" />
+
+    <Button
+        android:id="@+id/btn_btn_addItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="32sp"
+        android:layout_marginEnd="32sp"
+        android:text="Adicionar Item"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/btn_newList"
+        app:layout_constraintTop_toBottomOf="@+id/btn_newList" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
